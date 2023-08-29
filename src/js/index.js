@@ -24,9 +24,9 @@ function listar(){
   ulLista.innerHTML=''
 
   for (let nome of listaDeAtendimento){
-    let li = document.createElement('li')
-    li.classList.add('list-group-item')
-    li.textContent = nome
+    let li = document.createElement('li') // criando elemento li 
+    li.classList.add('list-group-item') // dando a classe se estilização
+    li.textContent = nome  // atribuindo o texto ao campo 
     ulLista.appendChild(li)
     
     console.log(nome)
