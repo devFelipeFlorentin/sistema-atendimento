@@ -21,15 +21,8 @@ function incluir(){
 }
 
 function listar(){
-  ulLista.innerHTML="" // zerando a lista antes de adicionar, para ele não duplicar 
   for (let nome of listaDeAtendimento){
-    let li = document.createElement('li'); // criando uma li para cada elemento
-    li.classList.add("list-group-item") // adicionando uma classe de estilização 
-
-    li.textContent = nome;  // falando que o nome ( variavel do for) receber o conteudo da li
-  
-    ulLista.appendChild(li)// passando a li (com o nome ) para a lista
-
+    console.log(nome) 
   }
 }
 
